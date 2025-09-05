@@ -5,7 +5,7 @@ A flexible HTTP client wrapper around curl with support for various request type
 ## Usage
 
 ```bash
-./http_client.sh --url URL --method METHOD [OPTIONS]
+./gianni.sh --url URL --method METHOD [OPTIONS]
 ```
 ## Required Parameters
 
@@ -29,27 +29,27 @@ A flexible HTTP client wrapper around curl with support for various request type
 
 ### Basic GET Request
 ```bash
-./http_client.sh --url http://localhost:8080/api/test --method GET
+./gianni.sh --url http://localhost:8080/api/test --method GET
 ```
 ### POST with JSON
 ```bash
-./http_client.sh --url http://localhost:8080/api/data --method POST --body data.json --content-type json
+./gianni.sh --url http://localhost:8080/api/data --method POST --body data.json --content-type json
 ```
 ### File Upload
 ```bash
-./http_client.sh --url http://localhost:8080/upload --method POST --file document.pdf
+./gianni.sh --url http://localhost:8080/upload --method POST --file document.pdf
 ```
 ### File Upload with Form Data
 ```bash
-./http_client.sh --url http://localhost:8080/upload --method POST --file document.pdf --body form_data.txt
+./gianni.sh --url http://localhost:8080/upload --method POST --file document.pdf --body form_data.txt
 ```
 ### Authenticated Request with Cookies
 ```bash
-./http_client.sh --url http://localhost:8080/api/secure --method GET --cookie cookies.txt
+./gianni.sh --url http://localhost:8080/api/secure --method GET --cookie cookies.txt
 ```
 ### Debug Mode
 ```bash
-./http_client.sh --url http://localhost:8080/api/data --method POST --body data.json --content-type json --debug
+./gianni.sh --url http://localhost:8080/api/data --method POST --body data.json --content-type json --debug
 ```
 ### Verbose Output
 ```bash
